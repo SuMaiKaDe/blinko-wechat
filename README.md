@@ -14,7 +14,7 @@
 ## 安装
 ```bash
 git clone https://github.com/SuMaiKaDe/blinko-wechat
-cd wechat-handler
+cd blinko-wechat
 npm install
 ```
 
