@@ -1,4 +1,4 @@
-# WeChat Public Account Message Handler
+# [blinko](https://github.com/blinko-space/blinko)的微信公众号测试号消息处理
 
 一个用于处理微信公众号消息的 Node.js 服务器应用，支持文本消息和图片消息的处理，并将消息转发到 Blinko API。
 
@@ -12,10 +12,11 @@
 - 完整的错误处理和日志记录
 
 ## 安装
-bash
-git clone [repository-url]
+```bash
+git clone https://github.com/SuMaiKaDe/blinko-wechat
 cd wechat-handler
 npm install
+```
 
 ## 配置
 
@@ -27,9 +28,15 @@ cp config.example.js config.js
 2. 修改 `config.js` 中的配置项：
 - SERVER.PORT: 服务器端口
 - SERVER.SESSION_SECRET: Session 密钥 随便填
-- WECHAT.TOKEN: 微信公众平台配置的 Token 随便填 跟网页一致
+- WECHAT.TOKEN: Token 随便填 跟网页一致
 - BLINKO.API_URL: Blinko API 地址
 - BLINKO.API_TOKEN: Blinko API 访问令牌
+
+3.去[微信公众平台](https://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index) 
+- 扫码登录
+- 配置 Token
+- 配置服务器地址
+- 提交验证
 
 ## 运行
 
